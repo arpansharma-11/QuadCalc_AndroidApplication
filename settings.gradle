@@ -1,0 +1,2 @@
+rootProject.name = "ntccapp"
+include ':app'

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">QUADCALC</string>
+    <string name="btn_txt">TAP TO VIEW</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="a_b"><![CDATA[A & B]]></string>
+    <string name="b">B</string>
+    <string name="enter_two_numbers_below">Enter two numbers below:-</string>
+    <string name="a">A</string>
+    <string name="a_or_b">A | B</string>
+    <string name="_a">!A</string>
+    <string name="_b">!b</string>
+    <string name="a_xor_b">A ⊕ B</string>
+    <string name="lsa_b"><![CDATA[A << B]]></string>
+    <string name="rsa_b"><![CDATA[A >> B]]></string>
+    <string name="result">RESULT:</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".binary"
+    android:orientation="vertical"
+    android:background="#0F111A"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER TWO NUMBERS"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/a"
+            tools:ignore="TouchTargetSizeCheck"
+            android:background="@color/white"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/b"
+            android:textSize="30sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:textColorHint= "@color/cardview_dark_background"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/a_b"
+        android:textSize="30sp"
+        android:id="@+id/and"
+        android:onClick="and"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"
+
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/a_or_b"
+        android:textSize="30sp"
+        android:id="@+id/or"
+        android:onClick="or"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/_a"
+        android:textSize="30sp"
+        android:id="@+id/nota"
+        android:onClick="nota"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/_b"
+        android:textSize="30sp"
+        android:id="@+id/notb"
+        android:onClick="notb"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/a_xor_b"
+        android:textSize="30sp"
+        android:id="@+id/xor"
+        android:onClick="xor"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/lsa_b"
+        android:textSize="30sp"
+        android:id="@+id/lShift"
+        android:onClick="lShift"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/rsa_b"
+        android:textSize="30sp"
+        android:id="@+id/rShift"
+        android:onClick="rShift"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#89ddff"
+        android:textColor="#0F111A"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showResult"
+            android:text="RESULT: ____"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+</LinearLayout>

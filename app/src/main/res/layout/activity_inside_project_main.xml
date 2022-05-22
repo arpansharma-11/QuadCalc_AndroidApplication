@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".insideProject"
+    android:orientation="vertical"
+    android:background="#0F111A">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="100dp"/>
+
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="150sp">
+
+          <Button
+              android:layout_width="160dp"
+              android:layout_height="match_parent"
+              android:text="  Arithmetic "
+              android:layout_weight="1"
+              android:id="@+id/b1"
+              android:onClick="launch1"
+              android:layout_marginRight="10dp"
+              android:backgroundTint="#c3e88d"
+              android:textColor="#0F111A"/>
+
+          <Button
+              android:layout_width="163dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="Trigonometric"
+              android:backgroundTint="#ff5370"
+              android:id="@+id/b2"
+              android:onClick="launch2"
+              android:textColor="#0F111A"/>
+
+
+      </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="150sp" >
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:text="Binary"
+            android:layout_weight="1"
+            android:id="@+id/b3"
+            android:onClick="launch3"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#89ddff"
+            android:textColor="#0F111A" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BMI"
+            android:id="@+id/b6"
+            android:onClick="launch6"
+            android:textColor="#0F111A"
+            android:backgroundTint="#ffcb6b"/>
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

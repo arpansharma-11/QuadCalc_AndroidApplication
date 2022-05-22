@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trigonometric"
+    android:orientation="vertical"
+    android:background="#0F111A"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER ANGLE"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:hint="θ"
+            tools:ignore="TouchTargetSizeCheck"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sin"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="sinθ"
+            android:textAllCaps="false"
+            android:onClick="sin"
+            android:textSize="40sp"
+            android:backgroundTint="#ff5370"
+            android:textColor="#0F111A"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cos"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="cosθ"
+            android:textAllCaps="false"
+            android:onClick="cos"
+            android:textSize="40sp"
+            android:backgroundTint="#ff5370"
+            android:textColor="#0F111A"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tan"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="tanθ"
+            android:textAllCaps="false"
+            android:onClick="tan"
+            android:textSize="40sp"
+            android:backgroundTint="#ff5370"
+            android:textColor="#0F111A"/>
+
+
+        <Button
+            android:id="@+id/cot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="cotθ"
+            android:textAllCaps="false"
+            android:onClick="cot"
+            android:textSize="40sp"
+            android:backgroundTint="#ff5370"
+            android:textColor="#0F111A"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/cosec"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="cosecθ"
+            android:textAllCaps="false"
+            android:onClick="cosec"
+            android:textSize="30sp"
+            android:backgroundTint="#ff5370"
+            android:textColor="#0F111A"/>
+
+        <Button
+            android:id="@+id/sec"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ff5370"
+            android:onClick="sec"
+            android:text="secθ"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            android:textColor="#0F111A"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showResult"
+            android:text="RESULT: ____ "
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+</LinearLayout>

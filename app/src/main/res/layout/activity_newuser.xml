@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newuser"
+    android:orientation="vertical"
+    android:background="#0F111A"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Full Name"
+        android:paddingTop="8dp"
+        android:textColorHint= "@color/cardview_dark_background"
+        android:background=" #eeffff"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/newusername"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="New Username"
+        android:layout_marginTop="20dp"
+        android:paddingTop="8dp"
+        android:textColorHint= "@color/cardview_dark_background"
+        android:background=" #eeffff"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="New Password"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:paddingTop="8dp"
+        android:textColorHint= "@color/cardview_dark_background"
+        android:background=" #eeffff"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="launchlogin"
+        android:textColor="@color/cardview_dark_background"
+        android:backgroundTint="#89ddff"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

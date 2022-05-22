@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arithmetic"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    android:backgroundTint="#0F111A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER TWO NUMBERS"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:hint="A"
+            tools:ignore="TouchTargetSizeCheck"
+            android:backgroundTint="@color/white"
+            android:textColorHint="#0F111A"
+            android:textAlignment="center"
+            android:textColor="#0F111A"
+            android:background=" #eeffff"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:hint="B"
+            tools:ignore="TouchTargetSizeCheck"
+            android:backgroundTint="@color/white"
+            android:textColorHint="#0F111A"
+            android:background=" #eeffff"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/add"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="+"
+            android:onClick="Add"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/diff"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="-"
+            android:onClick="Diff"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/prod"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="*"
+            android:onClick="Multiply"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="//"
+            android:onClick="Divide"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/floatdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="floatdiv"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="%"
+            android:onClick="Mod"
+            android:textSize="50sp"
+            android:textColor="#0F111A"
+            android:backgroundTint="#c3e88d"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showResult"
+            android:text="RESULT: ____ "
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+</LinearLayout>
